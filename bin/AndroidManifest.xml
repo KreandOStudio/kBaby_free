@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.kreandos.androidapp.kbaby_free.main"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name_int"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="es.kreandos.androidapp.kbaby_free.main.InicioSSplash"
+            android:label="@string/app_name_int"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="es.kreandos.androidapp.kbaby_free.main.Details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="es.kreandos.androidapp.kbaby_free.main.Tab_Termometro"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="es.kreandos.androidapp.kbaby_free.main.Tab_Alarma"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="es.kreandos.androidapp.kbaby_free.main.Tab_Medicamentos"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="es.kreandos.androidapp.kbaby_free.main.Tab_Historia"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity 
+            android:name="es.kreandos.androidapp.kbaby_free.main.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="es.kreandos.androidapp.kbaby_free.main.RegistroActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity 
+            android:name="es.kreandos.androidapp.kbaby_free.main.MainActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity 
+            android:name="es.kreandos.androidapp.kbaby_free.main.TareasSQLiteActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="es.kreandos.androidapp.kbaby_free.database.BD_Usuarios"
+            android:screenOrientation="portrait"
+            />
+        </application>
+
+</manifest>
